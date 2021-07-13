@@ -1,0 +1,110 @@
+@import url("./main.css");
+
+#title {display: none;}
+
+#quiz-progress {
+    background-color: gray;
+}
+.timer {
+    display: grid;
+    place-content: center;
+}
+#quiz-progress-indicator {
+    background-color: greenyellow;
+    width: 0%;
+    height: 8px;
+    transition: width 1s;
+}
+
+/* Timer */
+
+#time-indicator {
+    transform-origin: 50%;
+    transform: rotate(-90deg);
+    transition: stroke-dashoffset 1s;
+}
+#time-left {
+    z-index: 10;
+    transform: translate(15%, 45%);
+}
+
+.btn {
+    border: 0;
+    outline: 0;
+    padding: 12px 20px;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    transition: background-color .7s;
+}
+/* Quiz */
+.quiz {
+    height: calc(100vh - 180px);
+    min-height: 320px;
+    display: grid;
+    grid-template-rows: 40px 1fr 50px;
+    overflow-y: hidden;
+    text-align: justify;
+}
+.container {
+    padding: 12px 20px;
+    overflow: auto;
+}
+.container > * {
+    display: none;
+    transform: scale(0);
+    transition: transform 1s;
+}
+.intro {display: block;}
+.quiz-body {
+    width: 95%;
+    margin: 10px auto;
+    padding: 12px 20px;
+}
+.quiz-options {margin-top: 10px;}
+.quiz-options > li {margin: 10px 0;}
+#explanation {color: blue;}
+.quiz-options > li > .btn {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    text-align: left;
+}
+/* Button */
+.quiz-buttons {
+    padding: 6px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+}
+.quiz-buttons .btn {
+    background-color: orangered;
+    transform: scale(0);
+    transition: transform 1s;
+}
+#prev {border-radius: 1rem 0 0 1rem;}
+#next {border-radius: 0 1rem 1rem 0;}
+.quiz-buttons .show, .show {transform: scale(1);}
+.wrong {background-color: red;}
+.correct {background-color: green;}
+.green {color: green;}
+.red {color: red;}
+.teal {color: teal;}
+
+@media screen and (min-width: 678px) {
+    #title {display: block;}
+    header {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .quiz-options {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        align-items: center;
+        gap: 0px 35px;
+    }
+}

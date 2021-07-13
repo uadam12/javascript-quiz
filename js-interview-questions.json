@@ -1,0 +1,847 @@
+﻿{
+  "title":"JS Interview: Quiz",
+  "introduction":"This section focuses on javascript mcq. These Multiple Choice Questions should be practiced to improve the Javascript skills required for various interviews (campus interview, walk-in interview, company interview), placement, entrance exam and other competitive examinations.",
+  "timeAllowed":3600,
+  "questions":[
+    {
+      "id":1,
+      "question":"Which of the following is not JavaScript Data Types?",
+      "options":{
+        "A":"Undefined",
+        "B":"Number",
+        "C":"Boolean",
+        "D":"Float"
+      },
+      "correct":"D",
+      "explanation":"Following are the JavaScript Data types:<br> Number<br> String<br> Boolean<br> Object<br> Undefined"
+    },
+    {
+      "id":2,
+      "question":"Which company developed JavaScript?",
+      "options":{
+        "A":"Netscape",
+        "B":"Bell Labs",
+        "C":"Sun Microsystems",
+        "D":"IBM"
+      },
+      "correct":"A",
+      "explanation":"Netscape is the software company who developed JavaScript."
+    },
+    {
+      "id":3,
+      "question":"Inside which HTML element do we put the JavaScript?",
+      "options":{
+        "A":"&lt;script&gt;",
+        "B":"&lt;head&gt;",
+        "C":"&lt;meta&gt;",
+        "D":"&lt;style&gt;"
+      },
+      "correct":"A",
+      "explanation":"&lt;script&gt; is the element where we put the javascript."
+    },
+    {
+      "id":4,
+      "question":"Which of the following is correct about features of JavaScript?",
+      "options":{
+        "A":"It can not Handling dates and time.",
+        "B":"JavaScript is a object-based scripting language.",
+        "C":"JavaScript is not interpreter based scripting language.",
+        "D":"All of the above"
+      },
+      "correct":"B",
+      "explanation":"Some features of javascripts are as follow:-<br> 1. JavaScript is a object-based scripting language.<br> 2. Giving the user more control over the browser.<br> 3. It Handling dates and time.<br> 4. It Detecting the user's browser and OS.<br> 5. It is light weighted.<br> 6. JavaScript is a scripting language and it is not java.<br> 7. JavaScript is interpreter based scripting language.<br> 8. JavaScript is case sensitive."
+    },
+    {
+      "id":5,
+      "question":"Choose the correct JavaScript syntax to change the content of the following HTML code.",
+      "options":{
+        "A":"document.getElement(\"letsfindcourse\").innerHTML = \"I am a letsfindcourse\";",
+        "B":"document.getElementById(“letsfindcourse\").innerHTML = \"I am a letsfindcourse\";",
+        "C":"document.getId(“letsfindcourse\") = \"I am a letsfindcourse\";",
+        "D":"document.getElementById(“letsfindcourse\").innerHTML = I am a letsfindcourse;"
+      },
+      "correct":"B",
+      "explanation":"The correct syntax to access the element is <br>document.getElementById(\"letsfindcourse\").<br> Here we want to access the content written under that id, so we used .innerHTML to specify that and finally we replaced the content with whatever is written inside the quotes."
+    },
+    {
+      "id":6,
+      "question":"Which of the following is the correct syntax to display \"Letsfindcourse\" in an alert box using JavaScript?",
+      "options":{
+        "A":"alert-box(\"Letsfindcourse\");",
+        "B":"confirm(\"Letsfindcourse\");",
+        "C":"msgbox(\"Letsfindcourse\");",
+        "D":"alert(\"Letsfindcourse\");"
+      },
+      "correct":"D",
+      "explanation":"To display any text in the alert box, you need to write it as alert(\"Letsfindcourse\");"
+    },
+    {
+      "id":7,
+      "question":"What is the correct syntax for referring to an external script called \"LFC.js\"?",
+      "options":{
+        "A":"&lt;script src=\"LFC.js\"&gt;",
+        "B":"&lt;script source=\"LFC.js\"&gt;",
+        "C":"&lt;script ref=\"LFC.js\"&gt;",
+        "D":"&lt;script type=\"LFC.js\"&gt;"
+      },
+      "correct":"A",
+      "explanation":"The \"src\" term is used to refer to any JavaScript file. JavaScript."
+    },
+    {
+      "id":8,
+      "question":"Which of the following is not Javascript frameworks or libraries?",
+      "options":{
+        "A":"Polymer",
+        "B":"Meteor",
+        "C":"Cassandra",
+        "D":"jQuery"
+      },
+      "correct":"C",
+      "explanation":"Cassandra is a distributed database from Apache.So the option C is not Javascript frameworks or libraries."
+    },
+    {
+      "id":9,
+      "question":"Why so JavaScript and Java have similar name?",
+      "options":{
+        "A":"JavaScript is a stripped-down version of Java",
+        "B":"JavaScript's syntax is loosely based on Java's",
+        "C":"They both originated on the island of Java",
+        "D":"None of the above"
+      },
+      "correct":"B",
+      "explanation":"Because JavaScript's syntax is loosely based on Java's that's why JavaScript and Java have similar name."
+    },
+    {
+      "id":10,
+      "question":"What is the original name of JavaScript?",
+      "options":{
+        "A":"LiveScript",
+        "B":"EScript",
+        "C":"Mocha",
+        "D":"JavaScript"
+      },
+      "correct":"C",
+      "explanation":"The project was originally called Mocha, then renamed to LiveScript, and finally to JavaScript when Netscape and Sun did a license agreement. The idea at the time was to make it a scripting language complimentary to Java."
+    },
+    {
+      "id":11,
+      "question":"JavaScript is designed for following purpose -",
+      "options":{
+        "A":"to style HTML pages",
+        "B":"to execute Queries related to databases on a server",
+        "C":"to add interactivity to html pages",
+        "D":"All of the above"
+      },
+      "correct":"D",
+      "explanation":"JavaScript is designed for the following purpose:<br> a. to style HTML pages<br> b. to execute Queries related to databases on a server<br> c. to add interactivity to html pages<br> d. to perform server side scripting operations<br> e. none of the above JavaScript statements are terminated."
+    },
+    {
+      "id":12,
+      "question":"What will be the output of the following Javascript code?<br><pre><code>var string1 = \"Letsfindcourse\";</code><br><code>var intvalue = 30;</code><br><code>alert(string1 + intvalue);</code></pre>",
+      "options":{
+        "A":"Letsfindcourse 30",
+        "B":"30",
+        "C":"Letsfindcourse30",
+        "D":"Exception"
+      },
+      "correct":"C",
+      "explanation":"In JavaScript the alert function does the type casting and converts the integer value to string. After that it concatenates both the strings and shows the result as a concatenated string. Thus Letsfindcourse30 would be correct."
+    },
+    {
+      "id":13,
+      "question":"Among the following, which one is a ternary operator in JavaScript?",
+      "options":{
+        "A":"#",
+        "B":"::",
+        "C":"&:",
+        "D":"?:"
+      },
+      "correct":"D",
+      "explanation":"JavaScript supports one ternary operator, the conditional operator ?:, which combines three expressions into a single expression. If else case can be replaced by the conditional operator"
+    },
+    {
+      "id":14,
+      "question":"What are the three important manipulations done in a for loop on a loop variable in javascript?",
+      "options":{
+        "A":"the initialization, the Incrementation, and update",
+        "B":"the initialization, the test, and the update",
+        "C":"the initialization, the test, and Incrementation",
+        "D":"All of the above"
+      },
+      "correct":"B",
+      "explanation":"In a for loop, the initialization, the test, and the update are the three crucial manipulations of a loop variable. Firstly the loop initialiases the variable then test the condition and then after executing the statement increments its value."
+    },
+    {
+      "id":15,
+      "question":"What does javascript use instead of == and !=?",
+      "options":{
+        "A":"It uses bitwise checking",
+        "B":"It uses === and !== instead",
+        "C":"It uses equals() and notequals() instead",
+        "D":"It uses equalto()"
+      },
+      "correct":"B",
+      "explanation":"The subset does not include the comma operator, the bitwise operators, or the ++ and — operators. It also disallows == and != because of the type conversion they perform, requiring use of === and !== instead."
+    },
+    {
+      "id":16,
+      "question":"What should appear at the very end of your JavaScript?<br> The &lt;script language=\"javascript\"&gt; tag",
+      "options":{
+        "A":"&lt;script&gt;",
+        "B":"&lt;script&gt;",
+        "C":"&lt;/script language=\"javascript\"&gt;",
+        "D":"All of the above"
+      },
+      "correct":"B",
+      "explanation":"&lt;/script&gt; Should appear at the very end of your JavaScript.<br> The &lt; script&gt; element either contains scripting statements, or it points to an external script file through the src attribute."
+    },
+    {
+      "id":17,
+      "question":"Among the keywords below, which one is not a statement?",
+      "options":{
+        "A":"if",
+        "B":"with",
+        "C":"debugger",
+        "D":"use strict"
+      },
+      "correct":"D",
+      "explanation":"use strict is a directive introduced in ECMAScript5. Directives are not statements because it does not include any language keywords. Also, it can appear only at the start of a script or at the start of a function body, before any real statement has appeared."
+    },
+    {
+      "id":18,
+      "question":"How do we define the term Thread?",
+      "options":{
+        "A":"Device that controls input",
+        "B":"Variable that controls movement",
+        "C":"Controlled execution of applications",
+        "D":"None of the above"
+      },
+      "correct":"C",
+      "explanation":"Javascript is single-threaded. To clarify better, this means that one single thread handles the event loop. For older browsers, the whole browser shared one single thread between all the tabs."
+    },
+    {
+      "id":19,
+      "question":"Which symbol is used for comments in Javascript?",
+      "options":{
+        "A":"//",
+        "B":"\\\\",
+        "C":"\\* *\\",
+        "D":"\\* */"
+      },
+      "correct":"B",
+      "explanation":"Single line comments start with //.<br>Any text between // and the end of the line will be ignored by JavaScript"
+    },
+    {
+      "id":20,
+      "question":"Which of them is not the looping structures in JavaScript?",
+      "options":{
+        "A":"for",
+        "B":"while",
+        "C":"for which",
+        "D":"do while"
+      },
+      "correct":"C",
+      "explanation":"for which is not the looping structures in JavaScript."
+    },
+    {
+      "id":21,
+      "question":"What is defination of an undefined value in JavaScript?",
+      "options":{
+        "A":"Variable used in the code doesn't exist",
+        "B":"Variable is not assigned to any value",
+        "C":"Property doesn't exist",
+        "D":"All of the above"
+      },
+      "correct":"D",
+      "explanation":"Undefined value means the<br> 1.Variable used in the code doesn't exist<br> 2.Variable is not assigned to any value<br> 3.Property doesn't exist"
+    },
+    {
+      "id":22,
+      "question":"What are the types of Pop up boxes available in JavaScript?",
+      "options":{
+        "A":"Alert",
+        "B":"Prompt",
+        "C":"Confirm",
+        "D":"All of the above"
+      },
+      "correct":"D",
+      "explanation":"the types of Pop up boxes available in JavaScript<br> 1. Alert<br> 2. Confirm and<br> 3. Prompt"
+    },
+    {
+      "id":23,
+      "question":"what is the disadvantage of using innerHTML in JavaScript?",
+      "options":{
+        "A":"Content can not be replaced everywhere",
+        "B":"We can use like \"appending to innerHTML\"",
+        "C":"Even if you use +=like \"innerHTML = innerHTML + 'html'\" still the old content is replaced by html",
+        "D":"The entire innerHTML content is not re-parsed and build into elements, therefore its not slower"
+      },
+      "correct":"C",
+      "explanation":"If you use innerHTML in JavaScript the disadvantage is<br> 1.Content is replaced everywhere<br> 2.We cannot use like \"appending to innerHTML\"<br> 3.Even if you use +=like \"innerHTML = innerHTML + 'html'\" still the old content is replaced by html<br> 4.The entire innerHTML content is re-parsed and build into elements, therefore its much slower<br> 5.The innerHTML does not provide validation and therefore we can potentially insert valid and broken HTML in the document and break it."
+    },
+    {
+      "id":24,
+      "question":"What are the two basic groups of dataypes in JavaScript?",
+      "options":{
+        "A":"Primitive",
+        "B":"Reference types.",
+        "C":"All of the above",
+        "D":"None of the above"
+      },
+      "correct":"C",
+      "explanation":"They are as –<br> Primitive<br> Reference types.<br> Primitive types are number and Boolean data types. Reference types are more complex types like strings and dates."
+    },
+    {
+      "id":25,
+      "question":"Which of the following are the errors in JavaScript?",
+      "options":{
+        "A":"Load time errors",
+        "B":"Run time errors:",
+        "C":"Logical Errors:",
+        "D":"All of the above"
+      },
+      "correct":"B",
+      "explanation":"There are three types of errors:<br> Load time errors: Load-time errors are perhaps the most common and are generally caused by problems in syntax.<br> Run time errors:A runtime error is a program error that occurs while the program is running.<br> Logical Errors: A logic error (or logical error) is a mistake in a program's source code that results in incorrect or unexpected behavior."
+    },
+    {
+      "id":26,
+      "question":"Which of the following are the functional components in JavaScript?",
+      "options":{
+        "A":"First-class functions",
+        "B":"Encapsulated-class functions",
+        "C":"Fixed-class functions",
+        "D":"All of the above"
+      },
+      "correct":"A",
+      "explanation":"The different functional components in JavaScript are-<br> 1. First-class functions<br> 2. Nested functions"
+    },
+    {
+      "id":27,
+      "question":"Which of the following is not the properties of screen objects in JavaScript?",
+      "options":{
+        "A":"AvailHeight",
+        "B":"ColorsDepth",
+        "C":"AvailWidth",
+        "D":"ColorDepth"
+      },
+      "correct":"B",
+      "explanation":"Screen objects are used to read the information from the client's screen. The properties of screen objects are -<br> 1. AvailHeight<br> 2. AvailWidth<br> 3. ColorDepth<br> 4. Width<br> 5. Height"
+    },
+    {
+      "id":28,
+      "question":"Javascript string using double quotes is exactly the same as a string using single quotes?",
+      "options":{
+        "A":"True",
+        "B":"False",
+        "C":"Either true or false",
+        "D":"Neither true nor false"
+      },
+      "correct":"A",
+      "explanation":"True is the answer"
+    },
+    {
+      "id":29,
+      "question":"Find output of below code<br><pre><code>var a = '20';</code><br><code>var b = a = 30;</code><br><code>document.write(a+b);</code></pre>",
+      "options":{
+        "A":"Error in Script",
+        "B":"'20'30",
+        "C":"2030",
+        "D":"60"
+      },
+      "correct":"D",
+      "explanation":"No explanation"
+    },
+    {
+      "id":30,
+      "question":"What is divide by 0 in Javascript?<br> <pre><code>var a = 10;</code><br><code>var b = 0;</code><br><code>document.write(a/b);</code></pre>",
+      "options":{
+        "A":"Nothing is printed",
+        "B":"0 is printed",
+        "C":"Infinity is printed",
+        "D":"Some Garbage Value"
+      },
+      "correct":"C",
+      "explanation":"Infinity is printed divide by 0 in Javascript."
+    },
+    {
+      "id":31,
+      "question":"Which of the following function of Array object applies a function simultaneously against two values of the array (from right-to-left) as to reduce it to a single value?",
+      "options":{
+        "A":"pop()",
+        "B":"reduce()",
+        "C":"push()",
+        "D":"reduceRight()"
+      },
+      "correct":"D",
+      "explanation":"reduceRight() − Applies a function simultaneously against two values of the array (from right-to-left) as to reduce it to a single value."
+    },
+    {
+      "id":32,
+      "question":"What is the output of following Javascript?<pre><code>var a = 'letsfind';</code><br><code>var b = 'course';</code><br><code>var c = a/b;</code><br> <code>document.write(c);</code></pre>",
+      "options":{
+        "A":"letsfindcourse",
+        "B":"letsfind/course",
+        "C":"NaN",
+        "D":"None of the above"
+      },
+      "correct":"C",
+      "explanation":"it output of following Javascript is NaN."
+    },
+    {
+      "id":33,
+      "question":"How ++ works in Javascript? Find output of below Javascript code.<br> <pre><code>var a = 1;</code><br><code>document.write(a--);</code><br><code>document.write(a);</code></pre>",
+      "options":{
+        "A":"00",
+        "B":"01",
+        "C":"11",
+        "D":"10"
+      },
+      "correct":"D",
+      "explanation":"<code>document.write(a--);</code> will print 1 and after than it will decrement the variable a value to 0 , next line document.write(a); will print 0."
+    },
+    {
+      "id":34,
+      "question":"Find output of below Javascript addition code<br> <code>document.write(\"1 plus 1 is \" + 1 + 1);</code><br>",
+      "options":{
+        "A":"2",
+        "B":"1 plus 1 is 2",
+        "C":"1 plus 1 is 11",
+        "D":"1 plus 1 is 1 + 1"
+      },
+      "correct":"C",
+      "explanation":"output of below Javascript addition code is 1 plus 1 is 11."
+    },
+    {
+      "id":35,
+      "question":"In JavaScript, Arrays are data type. State True or False",
+      "options":{
+        "A":"True",
+        "B":"False",
+        "C":"Either true or false",
+        "D":"Neither true nor false"
+      },
+      "correct":"B",
+      "explanation":"In JavaScript, Arrays is not data type.<br> JavaScript - The Arrays Object. The Array object lets you store multiple values in a single variable. It stores a fixed-size sequential collection of elements of the same type."
+    },
+    {
+      "id":36,
+      "question":"Does JavaScript allow exception handling?",
+      "options":{
+        "A":"Yes, it provides try, catch as well as throw key word for exception handling",
+        "B":"Yes, but it provides only try block",
+        "C":"Yes, but it provides only Try catch block, but does not allow throw exception",
+        "D":"No"
+      },
+      "correct":"A",
+      "explanation":"JavaScript implements the <code>try...catch...finally</code> construct as well as the throw operator to handle exceptions. You can catch programmer-generated and runtime exceptions, but you cannot catch JavaScript syntax errors."
+    },
+    {
+      "id":37,
+      "question":"Which of the following method checks if its argument is not a number?",
+      "options":{
+        "A":"isNaN()",
+        "B":"nonNaN()",
+        "C":"NaN()",
+        "D":"None of the above"
+      },
+      "correct":"A",
+      "explanation":"The Number.isNaN() method determines whether a value is NaN (Not-A-Number). This method returns true if the value is of the type Number, and equates to NaN. Otherwise it returns false."
+    },
+    {
+      "id":38,
+      "question":"What if you use parseInt() to convert a string containing decimal value?",
+      "options":{
+        "A":"Throws Error",
+        "B":"It returns the decimal values in string form",
+        "C":"If returns only the integer portion of the number",
+        "D":"None of the listed option"
+      },
+      "correct":"C",
+      "explanation":"JavaScript's parseInt function is all about converting a string to an integer. The function takes a string value as an argument and converts it to a numerical value with no decimal places, or alternatively the value NaN."
+    },
+    {
+      "id":39,
+      "question":"What is the output of below Javascript code?<br> <code>alert(typeof new Date());</code>",
+      "options":{
+        "A":"Throws Error",
+        "B":"object",
+        "C":"Displays Nothing",
+        "D":"Current Date"
+      },
+      "correct":"B",
+      "explanation":"The typeof is an operator keyword which is used to get a type at the compile-time. Or in other words, this operator is used to get the System.Type object for a type."
+    },
+    {
+      "id":40,
+      "question":"What if we put ++ operator inside if condition? find the output of below code<br> <pre><code>&lt;script&gt;</code><br><code>&nbsp;var a = 10;</code><br><code>&nbsp;if(a == a++) document.write(a);</code><br><code>&lt;/script&gt;</code></pre>",
+      "options":{
+        "A":"Error",
+        "B":"Nothing is printed",
+        "C":"10",
+        "D":"11"
+      },
+      "correct":"D",
+      "explanation":"During initialization the value of variable a is 10.But after if condition it becomes 11 due to \"a++\" in if condition."
+    },
+    {
+      "id":41,
+      "question":"Which of the following is true?",
+      "options":{
+        "A":"If onKeyDown returns false, the key-press event is cancelled.",
+        "B":"If onKeyPress returns false, the key-down event is cancelled.",
+        "C":"If onKeyDown returns false, the key-up event is cancelled.",
+        "D":"If onKeyPress returns false, the key-up event is canceled."
+      },
+      "correct":"A",
+      "explanation":"No explanation"
+    },
+    {
+      "id":42,
+      "question":"Syntax for creating a RegExp object:<br> <pre>1. <code>var txt=new RegExp(pattern,attributes);</code><br>2. <code>var txt=/pattern/attributes;</code></pre><br> Which of the above mentioned syntax will correct?",
+      "options":{
+        "A":"1 only",
+        "B":"2 only",
+        "C":"Both 1 and 2",
+        "D":"None of the above"
+      },
+      "correct":"C",
+      "explanation":"Both the statement are correct.<br> Both the syntax can be used for creating a RegExp object."
+    },
+    {
+      "id":43,
+      "question":"If para1 is the DOM object for a paragraph, what is the correct syntax to change the text within the paragraph?",
+      "options":{
+        "A":"para1=\"New Text\"",
+        "B":"para1.value=\"New Text\";",
+        "C":"para1.firstChild.nodeValue= \"New Text\";",
+        "D":"para1.nodeValue=\"New Text\";"
+      },
+      "correct":"B",
+      "explanation":"the correct syntax to change the text within the paragraph is \"para1.value=\"New Text\";\""
+    },
+    {
+      "id":44,
+      "question":"The syntax of Eval is ________________",
+      "options":{
+        "A":"<code>[objectName.]eval(numeric)</code>",
+        "B":"<code>[objectName.]eval(string)</code>",
+        "C":"<code>[EvalName.]eval(string)</code>",
+        "D":"<code>[EvalName.]eval(numeric)</code>"
+      },
+      "correct":"B",
+      "explanation":"The eval() function evaluates or executes an argument. If the argument is an expression, eval() evaluates the expression. If the argument is one or more JavaScript statements, eval() executes the statements."
+    },
+    {
+      "id":45,
+      "question":"The _______ method of an Array object adds and/or removes elements from an array.",
+      "options":{
+        "A":"Reverse",
+        "B":"Shift",
+        "C":"Slice",
+        "D":"Splice"
+      },
+      "correct":"D",
+      "explanation":"The splice() method returns the removed item(s) in an array and slice() method returns the selected element(s) in an array, as a new array object"
+    },
+    {
+      "id":46,
+      "question":"Which tag(s) can handle mouse events in Netscape?",
+      "options":{
+        "A":"&lt;IMG&gt;",
+        "B":"&lt;A&gt;",
+        "C":"&lt;BR&gt;",
+        "D":"&lt;span&gt;"
+      },
+      "correct":"A",
+      "explanation":"The img element can handle mouse events in Netscape."
+    },
+    {
+      "id":47,
+      "question":"Consider the following code snippet<br> What will be the output for the above code snippet?<br> <pre><code>const pi=3.14;</code><br><code>var pi=4;</code><br><code>console.log(pi);</code></pre><br>",
+      "options":{
+        "A":"This will flash an error",
+        "B":"Prints 4",
+        "C":"Prints 3.14",
+        "D":"Ambiguity"
+      },
+      "correct":"A",
+      "explanation":"Const keyword fixes the value of the variable. Const keyword can not be redefined. Therefore attempts to alter the value or re-declaration causes errors."
+    },
+    {
+      "id":48,
+      "question":"What is the default value of the asyc attribute?",
+      "options":{
+        "A":"0",
+        "B":"1",
+        "C":"False",
+        "D":"True"
+      },
+      "correct":"D",
+      "explanation":"The async attribute is a boolean attribute. When present, it specifies that the script will be executed asynchronously as soon as it is available. The async attribute optionally accepts a boolean value and by default holds the value true."
+    },
+    {
+      "id":49,
+      "question":"What is the purpose of the Attr object in the HTML DOM?",
+      "options":{
+        "A":"Used to focus on a particular part of the HTML page",
+        "B":"HTML Attribute",
+        "C":"Used to arrange elements",
+        "D":"None of the mentioned"
+      },
+      "correct":"B",
+      "explanation":"In the HTML DOM, the Attr object represents an HTML attribute."
+    },
+    {
+      "id":50,
+      "question":"Which among the following POSIX signals generate events?",
+      "options":{
+        "A":"SIGDOWN",
+        "B":"SIGFLOAT",
+        "C":"SIGINT",
+        "D":"SIGSHORT"
+      },
+      "correct":"C",
+      "explanation":"The SIGINT is a POSIX signal that generates event. A simple code like below can do a proper clean up and exit on CTRL-C or SIGINT passed from command line / other application to the nodejs app’s ProcessID."
+    },
+    {
+      "id":51,
+      "question":"Javascript is ideal to?",
+      "options":{
+        "A":"make computations in HTML simpler",
+        "B":"minimize storage requirements on the web server",
+        "C":"increase the download time for the client",
+        "D":"none of the mentioned"
+      },
+      "correct":"B",
+      "explanation":"Javascript helps in doing various tasks with minimum storage requirements. Therefore, to reduce storage requirements, Javascript has always said a better one. explanation."
+    },
+    {
+      "id":52,
+      "question":"The meaning for Augmenting classes is that:",
+      "options":{
+        "A":"objects inherit prototype properties even in dynamic state",
+        "B":"objects inherit prototype properties only in dynamic state",
+        "C":"objects inherit prototype properties in static state",
+        "D":"object doesn’t inherit prototype properties in static state"
+      },
+      "correct":"A",
+      "explanation":"Javascript's prototype-based inherit system is dynamic: an object inherits properties with its prototype, even if the prototype changes after the creation of the object. This means that we can increase JavaScript classes by adding new methods only to their prototype objects."
+    },
+    {
+      "id":53,
+      "question":"Which is the handler method used to invoke when uncaught JavaScript exceptions occur?",
+      "options":{
+        "A":"Onhalt",
+        "B":"Onerror",
+        "C":"Both onhalt and onerror",
+        "D":"Onsuspend"
+      },
+      "correct":"B",
+      "explanation":"The onerror handler method can be registered to be invoked when uncaught JavaScript exceptions occur. The onerror event is triggered if an error occurs while loading an external file."
+    },
+    {
+      "id":54,
+      "question":"Consider the code snippet given below<br> <code>var count = [1,,3];</code><br> What is the observation made?",
+      "options":{
+        "A":"The omitted value takes \"undefined\"",
+        "B":"This results in an error",
+        "C":"This results in an exception",
+        "D":"The omitted value takes an integer value"
+      },
+      "correct":"A",
+      "explanation":"Array is defined with a null value when no value is mentioned. If you omit a value from an array literal, the omitted element is given an undefined value."
+    },
+    {
+      "id":55,
+      "question":"Which among the following POSIX signals generate events?",
+      "options":{
+        "A":"SIGDOWN",
+        "B":"SIGFLOAT",
+        "C":"SIGINT",
+        "D":"SIGSHORT"
+      },
+      "correct":"C",
+      "explanation":"The SIGINT is a POSIX signal that generates event. A simple code like below can do a proper clean up and exit on CTRL-C or SIGINT passed from command line / other application to the nodejs app’s ProcessID."
+    },
+    {
+      "id":56,
+      "question":"What does the interpreter do when you reference variables in other scopes?",
+      "options":{
+        "A":"Traverses the queue",
+        "B":"Traverses the stack",
+        "C":"Finds the bugs",
+        "D":"Traverse the array"
+      },
+      "correct":"B",
+      "explanation":"The interpreter executes the javascript code. Normally when you reference variables in other scopes at the global level, in other namespaces, and so on—the interpreter needs to traverse the stack to get to the variable."
+    },
+    {
+      "id":57,
+      "question":"What must be done in order to implement Lexical Scoping?",
+      "options":{
+        "A":"Get the object",
+        "B":"Dereference the current scope chain",
+        "C":"Reference the current scope chain",
+        "D":"Return the value"
+      },
+      "correct":"C",
+      "explanation":"In order to implement lexical scoping, the internal state of a JavaScript function object must include not only the code of the function but also a reference to the current scope chain."
+    },
+    {
+      "id":58,
+      "question":"From which version of IE is canvas supported?",
+      "options":{
+        "A":"6",
+        "B":"7",
+        "C":"8",
+        "D":"9"
+      },
+      "correct":"D",
+      "explanation":"The canvas element is not supported by IE before IE9, but it can be reasonably well emulated in IE6, 7, and 8. It is supported from version 4 in chrome and 2 in firefox."
+    },
+    {
+      "id":59,
+      "question":"How many parameters does the method plot() accept?",
+      "options":{
+        "A":"7",
+        "B":"8",
+        "C":"9",
+        "D":"10"
+      },
+      "correct":"C",
+      "explanation":"Plot() is a generic function, meaning, it has many methods which are called according to the type of object passed to plot() . The method plot() accepts a total of 9 parameters."
+    },
+    {
+      "id":60,
+      "question":"What is the purpose of script loading?",
+      "options":{
+        "A":"Load Scripts programmatically",
+        "B":"Load JavaScript files manually",
+        "C":"Load JavaScript files programmatically",
+        "D":"All of the mentioned"
+      },
+      "correct":"C",
+      "explanation":"The script loading loads remote JavaScript files programmatically and allow us to trick the rendering engine. The async attribute is a boolean attribute. When present, it specifies that the script will be executed asynchronously as soon as it is available."
+    },
+    {
+      "id":61,
+      "question":"JavaScript can be written __________",
+      "options":{
+        "A":"directly into JS file and included into HTML",
+        "B":"directly on the server page",
+        "C":"directly into HTML pages",
+        "D":"directly into the css file"
+      },
+      "correct":"A",
+      "explanation":"Javascript files can be saved by .js extension and can be included in HTML files. Script tags are used with the src attribute to include Js files."
+    },
+    {
+      "id":62,
+      "question":"When a class B can extend another class A, we say that:",
+      "options":{
+        "A":"A is the superclass and B is the subclass",
+        "B":"B is the superclass and A is the subclass",
+        "C":"Both A and B are the superclass",
+        "D":"Both A and B are the subclass"
+      },
+      "correct":"A",
+      "explanation":"Superclass is the class from which subclasses are defined. Subclasses are also called the extension of the superclass. In the above scenario, there will be a superclass and B is collas."
+    },
+    {
+      "id":63,
+      "question":"Which method receives the return value of setInterval() to cancel future invocations?",
+      "options":{
+        "A":"clearInvocation()",
+        "B":"cancelInvocation()",
+        "C":"clearInterval()",
+        "D":"clear()"
+      },
+      "correct":"C",
+      "explanation":"Like setTimeout(), setInterval() returns a value that can be passed to clearInterval() to cancel any future invocations of the scheduled function. The ID value returned by setInterval() is used as the parameter for the clearInterval() method."
+    },
+    {
+      "id":64,
+      "question":"The pop() method of the array does which of the following task?",
+      "options":{
+        "A":"decrements the total length by 1",
+        "B":"increments the total length by 1",
+        "C":"prints the first element but no effect on the length",
+        "D":"updates the element"
+      },
+      "correct":"A",
+      "explanation":"pop() function pops out that is delete the last element from the array. Hence pop() method (it works with push()) reduces the length of an array by 1."
+    },
+    {
+      "id":65,
+      "question":"What will be the return value of the write() method when the Node cannot write the data immediately and has to buffer it internally?",
+      "options":{
+        "A":"0",
+        "B":"1",
+        "C":"True",
+        "D":"False"
+      },
+      "correct":"D",
+      "explanation":"The write() method writes HTML expressions or JavaScript code to a document. The write() method is mostly used for testing: If it is used after an HTML document is fully loaded, it will delete all existing HTML. write() method never blocks. If Node cannot write the data immediately and has to buffer it internally, the write() method returns false."
+    },
+    {
+      "id":66,
+      "question":"What will happen if you reference document.location from within an object?",
+      "options":{
+        "A":"Traverses the queue",
+        "B":"Finds the bugs",
+        "C":"Traverses the stack",
+        "D":"Traverses the array"
+      },
+      "correct":"C",
+      "explanation":"window.location.href returns the href (URL) of the current page. If you reference document.location from within an object, the interpreter will need to go from the function that references the variable, up out of the namespace to the global window scope, down to the document scope, and get the location value."
+    },
+    {
+      "id":67,
+      "question":"What is a closure?",
+      "options":{
+        "A":"Function objects",
+        "B":"Scope where function’s variables are resolved",
+        "C":"Both Function objects and Scope where function’s variables are resolved",
+        "D":"Function return value"
+      },
+      "correct":"C",
+      "explanation":"A combination of a function object and a scope (a set of variable bindings) in which the function’s variables are resolved is called a closure."
+    },
+    {
+      "id":68,
+      "question":"Which is the method invoked to connect the last vertex back to the first?",
+      "options":{
+        "A":"closePath()",
+        "B":"close()",
+        "C":"connectlast(first)",
+        "D":"connect()"
+      },
+      "correct":"A",
+      "explanation":"The closePath() method connects the last vertex back to the first, thereby creating a path. It connects the last point to the first point thereby creating a closed figure."
+    },
+    {
+      "id":69,
+      "question":"What is the need for bubble charts?",
+      "options":{
+        "A":"Represent 2D data",
+        "B":"Represent 3D data",
+        "C":"Represent 2D and 3D data",
+        "D":"Represents meta data"
+      },
+      "correct":"B",
+      "explanation":"A bubble plot is a scatterplot where a third dimension is added: the value of an additional variable is represented through the size of the dots. They are used to represent three-dimensional data."
+    },
+    {
+      "id":70,
+      "question":"How to get a particular value using the tagged name?",
+      "options":{
+        "A":"getElementbyID()",
+        "B":"getElementsbyName()",
+        "C":"getElementsbyTagName()",
+        "D":"getTagName()"
+      },
+      "correct":"C",
+      "explanation":"The getElementsByTagName() method returns a collection of all elements in the document with the specified tag name, as a NodeList object. The method getElementsbyTagName() can be used to get a particular value using the tagged name associated with the document."
+    }
+  ]
+}

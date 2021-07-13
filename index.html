@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Interview Quiz</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/functions.js"></script>
+    <script src="./js/quiz.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="title">Quiz App:JS Interview</h1>
+        <svg width="100" height="100" class="timer">
+            <circle
+                stroke-width="10"
+                stroke="grey" 
+                fill="transparent"
+                r="40"
+                cx="50"
+                cy="50"
+            />
+            <circle
+                id="time-indicator"
+                stroke-width="10"
+                stroke="tomato" 
+                fill="transparent"
+                r="40"
+                cx="50"
+                cy="50"
+            />
+            <text x="10" y="10" fill="white" id="time-left">MM:SS</text>
+        </svg>
+    </header>
+    <div id="quiz-progress">
+        <div id="quiz-progress-indicator"></div>
+    </div>
+
+    <main>
+        <div class="quiz">
+            <h3 id="quiz-title">Question <span id="question-number">Number</span></h3>
+            <div class="container">
+                <p class="intro show">Prepare for your Javascript Interview start here</p>
+                <div class="quiz-content">
+                    <div class="quiz-body">
+                        <p id="question">Question!</p>
+                    </div>
+                    <ol type="A" class="quiz-options">
+                        <li><button accesskey="A" onclick="chooseAnswer(this)" data-option="A" class="btn option">A</button></li>
+                        <li><button accesskey="B" onclick="chooseAnswer(this)" data-option="B" class="btn option">B</button></li>
+                        <li><button accesskey="C" onclick="chooseAnswer(this)" data-option="C" class="btn option">C</button></li>
+                        <li><button accesskey="D" onclick="chooseAnswer(this)" data-option="D" class="btn option">D</button></li>
+                    </ol><br>
+                    <p id="explanation"></p>
+                </div>
+                <div class="quiz-summary">
+                    <p>You have answer <span class="correctly"></span> question(s) correctly, <span class="wrongly"></span> question(s) wrongly and skip <span class="skip"></span> question(s).</p>
+                    <table width=100%>
+                        <tr>
+                            <th></th>
+                            <th>Question Numbers</th>
+                        </tr>
+                        <tr class="green">
+                            <th>Correct</th>
+                            <td class="correctly"></td>
+                        </tr>
+                        <tr class="red">
+                            <th>Wrong</th>
+                            <td class="wrongly"></td>
+                        </tr>
+                        <tr class="teal">
+                            <th>Skip</th>
+                            <td class="skip"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="quiz-buttons">
+                <button accesskey="p" id="prev" class="btn">Prev</button>
+                <button accesskey="s" id="start" class="btn">Start</button>
+                <button accesskey="N" id="next" class="btn">Next</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>All rights reserved &copy; 2020 - 2021.</p>
+    </footer>
+    <script src="./js/html-dom.js"></script>
+    <script src="./js/handlers.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
