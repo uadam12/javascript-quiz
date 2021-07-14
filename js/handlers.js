@@ -21,7 +21,8 @@ function startQuiz() {
 function changeQuestion(btn) {
     btn = btn.target.innerHTML;
     const qNum = quiz.getQuestionNum();
-    if(btn === "Next") {
+
+    if(btn === "→") {
         if(qNum === 1) show(prev);
         else if(qNum >= quiz.totalQuestions - 1) {
             hide(next);

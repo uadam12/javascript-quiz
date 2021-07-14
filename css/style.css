@@ -92,6 +92,11 @@
 .green {color: green;}
 .red {color: red;}
 .teal {color: teal;}
+.quiz-summary {color: crimson;}
+.summary-table {
+    width: 100%;
+    overflow-x: auto;
+}
 
 @media screen and (min-width: 678px) {
     #title {display: block;}

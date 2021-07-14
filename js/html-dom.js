@@ -19,6 +19,6 @@ const correctly = getEls(".correctly");
 const wrong = getEls(".wrongly");
 const skip = getEls(".skip");
 
-const retake = makeBtn("Retake");
+const retake = makeBtn("&#8635;");
 const submit = makeBtn("Submit");
-const correction = makeBtn("Correction");
+const correction = makeBtn("&#128064;");

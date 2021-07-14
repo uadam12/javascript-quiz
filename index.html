@@ -56,30 +56,32 @@
                 </div>
                 <div class="quiz-summary">
                     <p>You have answer <span class="correctly"></span> question(s) correctly, <span class="wrongly"></span> question(s) wrongly and skip <span class="skip"></span> question(s).</p>
-                    <table width=100%>
-                        <tr>
-                            <th></th>
-                            <th>Question Numbers</th>
-                        </tr>
-                        <tr class="green">
-                            <th>Correct</th>
-                            <td class="correctly"></td>
-                        </tr>
-                        <tr class="red">
-                            <th>Wrong</th>
-                            <td class="wrongly"></td>
-                        </tr>
-                        <tr class="teal">
-                            <th>Skip</th>
-                            <td class="skip"></td>
-                        </tr>
-                    </table>
+                    <div class="summary-table">
+                        <table width=100%>
+                            <tr>
+                                <th></th>
+                                <th>Question Numbers</th>
+                            </tr>
+                            <tr class="green">
+                                <th>Correct</th>
+                                <td class="correctly"></td>
+                            </tr>
+                            <tr class="red">
+                                <th>Wrong</th>
+                                <td class="wrongly"></td>
+                            </tr>
+                            <tr class="teal">
+                                <th>Skip</th>
+                                <td class="skip"></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="quiz-buttons">
-                <button accesskey="p" id="prev" class="btn">Prev</button>
-                <button accesskey="s" id="start" class="btn">Start</button>
-                <button accesskey="N" id="next" class="btn">Next</button>
+                <button accesskey="p" id="prev" class="btn">&#8592;</button>
+                <button accesskey="s" id="start" class="btn">&#9654;</button>
+                <button accesskey="N" id="next" class="btn">&#8594;</button>
             </div>
         </div>
     </main>
