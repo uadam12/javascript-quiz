@@ -64,7 +64,7 @@ function submitQuiz() {
     quizSummary.style.display = "block";
 
     doAfter(1, () => {
-        quizTitle.innerHTML = "Your Quiz Result";
+        app.replaceChild(yourResult, quizTitle);
         showCorrect();
         showResult();
         // Remove or replace the buttons
@@ -89,8 +89,7 @@ function quizCorrection() {
     quizContent.style.display = "block";
 
     doAfter(1, () => {
-        quizTitle.innerHTML = "Your Quiz Result";
-
+        app.replaceChild(quizTitle, yourResult);
         btns.insertBefore(prev, retake);
         btns.appendChild(next)
         // Remove the correction button

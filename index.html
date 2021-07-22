@@ -10,31 +10,33 @@
     <script src="./js/quiz.js"></script>
 </head>
 <body>
-    <header>
-        <h1 id="title">Quiz App:JS Interview</h1>
-        <svg width="100" height="100" class="timer">
-            <circle
-                stroke-width="10"
-                stroke="grey" 
-                fill="transparent"
-                r="40"
-                cx="50"
-                cy="50"
-            />
-            <circle
-                id="time-indicator"
-                stroke-width="10"
-                stroke="tomato" 
-                fill="transparent"
-                r="40"
-                cx="50"
-                cy="50"
-            />
-            <text x="10" y="10" fill="white" id="time-left">MM:SS</text>
-        </svg>
-    </header>
-    <div id="quiz-progress">
-        <div id="quiz-progress-indicator"></div>
+    <div>
+        <header>
+            <h1 id="title">Quiz App:JS Interview</h1>
+            <svg width="100" height="100" class="timer">
+                <circle
+                    stroke-width="10"
+                    stroke="grey" 
+                    fill="transparent"
+                    r="40"
+                    cx="50"
+                    cy="50"
+                />
+                <circle
+                    id="time-indicator"
+                    stroke-width="10"
+                    stroke="tomato" 
+                    fill="transparent"
+                    r="40"
+                    cx="50"
+                    cy="50"
+                />
+                <text x="10" y="10" fill="white" id="time-left">MM:SS</text>
+            </svg>
+        </header>
+        <div id="quiz-progress">
+            <div id="quiz-progress-indicator"></div>
+        </div>
     </div>
 
     <main>
@@ -88,9 +90,10 @@
 
     <footer>
         <p>All rights reserved &copy; 2020 - 2021.</p>
+        
+        <script src="./js/html-dom.js"></script>
+        <script src="./js/handlers.js"></script>
+        <script src="./js/main.js"></script>
     </footer>
-    <script src="./js/html-dom.js"></script>
-    <script src="./js/handlers.js"></script>
-    <script src="./js/main.js"></script>
 </body>
 </html>

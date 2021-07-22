@@ -1,3 +1,4 @@
+const app = getEl(".quiz");
 const quizContainer = getEl(".container");
 const title = getEl("#title");
 const quizTitle = getEl("#quiz-title");
@@ -22,3 +23,4 @@ const skip = getEls(".skip");
 const retake = makeBtn("&#8635;");
 const submit = makeBtn("Submit");
 const correction = makeBtn("&#128064;");
+const yourResult = mkel("h3", 0, "Your result summary");

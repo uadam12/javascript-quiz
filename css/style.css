@@ -6,11 +6,11 @@
     background-color: gray;
 }
 .timer {
-    display: grid;
+    display: inline-grid;
     place-content: center;
 }
 #quiz-progress-indicator {
-    background-color: greenyellow;
+    background-color: green;
     width: 0%;
     height: 8px;
     transition: width 1s;
@@ -39,12 +39,17 @@
 }
 /* Quiz */
 .quiz {
-    height: calc(100vh - 180px);
-    min-height: 320px;
+    border-radius: 1rem;
+    width: 95%;
+    max-width: 600px;
+    height: 100%;
+    margin: auto;
     display: grid;
-    grid-template-rows: 40px 1fr 50px;
-    overflow-y: hidden;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 5px;
     text-align: justify;
+    overflow: hidden;
+    background-color: white;
 }
 .container {
     padding: 12px 20px;
@@ -74,7 +79,7 @@
 .quiz-buttons {
     padding: 6px 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(3, auto);
     justify-content: space-between;
     align-items: center;
     column-gap: 50px;

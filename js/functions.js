@@ -1,13 +1,13 @@
 const getEl = el => document.querySelector(el);
 const getEls = els => Array.from(document.querySelectorAll(els));
+const mkel = (el, c, v) => {
+    el = document.createElement(el);
+    if(c) el.classList.add(c);
+    if(v) el.innerHTML = v;
 
-function makeBtn(label) {
-    const btn = document.createElement("button");
-    btn.classList.add("btn");
-    btn.innerHTML = label;
-
-    return btn;
-}
+    return el;
+};
+const makeBtn = label => mkel("button", "btn", label);
 
 function doAfter(s, func) {
     const timeout = setTimeout(() => {
