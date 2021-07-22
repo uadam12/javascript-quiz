@@ -10,6 +10,8 @@ const intro = getEl(".container > p.intro");
 const quizContent = getEl(".quiz-content");
 const quizSummary = getEl(".quiz-summary");
 const question = getEl("#question");
+const userAnswer = getEl(".user-answer");
+const status = getEl("#status");
 const explanation = getEl("#explanation");
 const options = getEls(".quiz-options > li > .btn");
 const btns = getEl(".quiz-buttons");
@@ -24,3 +26,5 @@ const retake = makeBtn("&#8635;");
 const submit = makeBtn("Submit");
 const correction = makeBtn("&#128064;");
 const yourResult = mkel("h3", 0, "Your result summary");
+
+const getOpt = opt => getEl(`.btn[data-option="${opt}"]`);

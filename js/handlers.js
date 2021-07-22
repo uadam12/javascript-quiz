@@ -6,7 +6,7 @@ function startQuiz() {
         displayTimeLeft(time);
         if(time < 1) submitQuiz();
     }, 1000);
-    displayQuestion(quiz.getQuestion());
+    displayQuestion();
     quizContent.style.display = "block";
     show(next);
     hide(intro);
@@ -35,17 +35,22 @@ function changeQuestion(btn) {
             show(next);
         } quiz.prevQuestion();
     }
-    displayQuestion(quiz.getQuestion());
+    displayQuestion();
 }
 
 function chooseAnswer(btn) {
     const i = quiz.index;
     // Store user answer
-    answers[i] = btn.dataset.option;
+    quiz.setAnswer(btn.dataset.option);
     // Show user his choice and progress
-    const answered = answers.filter(answer => answer);
+    const answered = quiz.answers.filter(answer => answer);
     const progress = answered.length / quiz.totalQuestions * 100;
-    showChoice(i);
+
+    options.forEach(option => {
+        option.classList.remove("correct");
+    });
+    btn.classList.add("correct");
+    
     quizProgressIndicator.style.width = progress+"%";
 }
 
@@ -87,6 +92,7 @@ function quizCorrection() {
     hide(correction);
     // Change the display of quiz content
     quizContent.style.display = "block";
+    userAnswer.style.display = "block";
 
     doAfter(1, () => {
         app.replaceChild(quizTitle, yourResult);

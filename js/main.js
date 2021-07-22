@@ -1,7 +1,7 @@
 const radius = timeIndicator.r.baseVal.value;
 const circum = 2 * Math.PI * radius;
 
-let answers = [], summary = false, quiz, timer;
+let summary = false, quiz, timer;
 
 // Get the quiz data
 getQuizData(quizData => {
@@ -20,15 +20,14 @@ getQuizData(quizData => {
 });
 
 // Display question
-function displayQuestion(questionData) {
+function displayQuestion() {
+    const questionData = quiz.getQuestion();
+
     hide(quizContent);
     doAfter(1, () => {
         show(quizContent);
         question.innerHTML = questionData.question;
         displayOptions(questionData.options);
-        showChoice(quiz.index);
-
-        if(summary) showCorrect();
     });
     questionNumber.innerHTML = quiz.getQuestionNum();
 }
@@ -38,25 +37,39 @@ function displayOptions(quesOption) {
     options.forEach(option => {
         const opt = option.dataset.option;
         option.innerHTML = quesOption[opt];
+        option.classList.remove("correct");
+        option.classList.remove("skip-ques");
     });
+    const chosen = quiz.getAnswer();
+
+    if(summary) showCorrect();
+    else if(chosen) getOpt(chosen).classList.add("correct");
 }
 
-function showChoice(i, correct) {
-    const chosen = answers[i];
-    const ans = summary? "wrong":"correct";
-    options.forEach(option => {
-        const opt = option.dataset.option;
-        option.classList.remove("wrong");
-        option.classList.remove("correct");
-        if(chosen === opt) option.classList.add(ans);
-        if(correct === opt) option.classList.add("correct");
-    });
-}
 function showCorrect() {
     const question = quiz.getQuestion();
-    const correctOpt = getEl(`.quiz-options > li > .btn[data-option='${question.correct}']`);
+    const correct = quiz.getCorrect();
+    const chosen = quiz.getAnswer();
+    const correctOpt = getOpt(correct);
+
+    let ansStatus = "skip this question.";
+    let color = "blue";
+
     
-    correctOpt.classList.add("correct");
+    if(chosen) {
+        if(chosen === correct) {
+            ansStatus = "answer this question correctly.";
+            color = "green";
+        } else {
+            ansStatus = "answer this question wrongly.";
+            color = "red";
+            getOpt(chosen).classList.add("wrong");
+        }
+        correctOpt.classList.add("correct");
+    } else correctOpt.classList.add("skip-ques");
+    
+    status.innerHTML = ansStatus;
+    status.style.color = color;
     explanation.innerHTML = question.explanation;
 }
 function showResult() {
@@ -65,16 +78,19 @@ function showResult() {
     const skips = [];
 
     for(i=0; i<quiz.totalQuestions; i++) {
-        const userAns = answers[i];
+        const userAns = quiz.answers[i];
         const correctAnswer = quiz.questions[i].correct;
+        const no = i+1;
 
-        if(userAns === correctAnswer) correctAns.push(i+1);
-        else if(!userAns) skips.push(i+1);
-        else wrongAns.push(i+1);
+        if(userAns === correctAnswer) correctAns.push(no);
+        else if(!userAns) skips.push(no);
+        else wrongAns.push(no);
     }
+
     correctly[0].innerHTML = correctAns.length;
     wrong[0].innerHTML = wrongAns.length;
     skip[0].innerHTML = skips.length;
+
     correctly[1].innerHTML = correctAns;
     wrong[1].innerHTML = wrongAns;
     skip[1].innerHTML = skips;

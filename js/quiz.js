@@ -5,8 +5,9 @@ class Quiz {
         this.timeLeft = this.timeAllowed;
         this.questions = quizData.questions.
             sort(() => Math.random() - 0.5);
+        this.answers = [];
         this.index = 0;
-        this.totalQuestions = this.questions.length;
+        this.totalQuestions = this.questions.length = 3;
     }
     prevQuestion() {
         if(this.index > 0)
@@ -22,5 +23,14 @@ class Quiz {
     getQuestionNum() {return this.index +1;}
     getQuestion() {
         return this.questions[this.index];
+    }
+    setAnswer(answer) {
+        this.answers[this.index] = answer;
+    }
+    getAnswer() {
+        return this.answers[this.index];
+    }
+    getCorrect() {
+        return this.questions[this.index].correct;
     }
 }
