@@ -1,4 +1,5 @@
 function startQuiz() {
+    quiz.start = true;
     timeIndicator.style.strokeDasharray =  `${circum} ${circum}`;
 
     timer = setInterval(() => {
@@ -21,16 +22,20 @@ function startQuiz() {
 function changeQuestion(btn) {
     btn = btn.target.innerHTML;
     const qNum = quiz.getQuestionNum();
+    const firstQuestion = qNum === 1;
+    const lastQuestion = qNum === quiz.totalQuestions;
 
     if(btn === "→") {
-        if(qNum === 1) show(prev);
+        if(lastQuestion) return;
+        else if(firstQuestion) show(prev);
         else if(qNum >= quiz.totalQuestions - 1) {
             hide(next);
             show(submit);
         } quiz.nextQuestion();
-    } else {
-        if(qNum === 2) hide(prev);
-        else if(qNum === quiz.totalQuestions) {
+    } else if(btn === "←") {
+        if(firstQuestion) return;
+        else  if(qNum === 2) hide(prev);
+        else if(lastQuestion) {
             hide(submit);
             show(next);
         } quiz.prevQuestion();
@@ -58,6 +63,7 @@ function submitQuiz() {
     clearInterval(timer);
     // Enable summary
     summary = true;
+    quiz.start = false;
     // Disabled the options
     options.forEach(option => option.disabled = true);
     
@@ -86,6 +92,7 @@ function submitQuiz() {
 }
 
 function quizCorrection() {
+    quiz.start = true;
     // Hide the quiz summary and correction button
     hide(quizSummary);
     hide(retake);
@@ -108,4 +115,36 @@ function quizCorrection() {
         show(retake);
         if(quiz.getQuestionNum() < quiz.totalQuestions) show(next);
     });
+}
+
+function keyHandler(e) {
+    if(!quiz.start) return;
+
+    switch(e.code) {
+        case "ArrowLeft":
+        case "KeyP":
+            prev.click();    
+        break;
+        case "ArrowRight":
+        case "KeyN":
+            next.click();    
+        break;
+        case "KeyA":
+            getOpt("A").click();    
+        break;
+        case "KeyB":
+            getOpt("B").click();
+        break;
+        case "KeyC":
+            getOpt("C").click();
+        break;
+        case "KeyD":
+            getOpt("D").click();    
+        break;
+        case "KeyS":
+            const sure = confirm("Are you sure you want to submit?");
+            
+            if(sure) submit.click();
+        break;
+    }
 }

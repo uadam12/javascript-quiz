@@ -7,7 +7,8 @@ class Quiz {
             sort(() => Math.random() - 0.5);
         this.answers = [];
         this.index = 0;
-        this.totalQuestions = this.questions.length = 3;
+        this.start = false;
+        this.totalQuestions = this.questions.length;
     }
     prevQuestion() {
         if(this.index > 0)

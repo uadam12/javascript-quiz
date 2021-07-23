@@ -39,6 +39,7 @@ function displayOptions(quesOption) {
         option.innerHTML = quesOption[opt];
         option.classList.remove("correct");
         option.classList.remove("skip-ques");
+        option.classList.remove("wrong");
     });
     const chosen = quiz.getAnswer();
 
@@ -109,3 +110,4 @@ next.addEventListener("click", changeQuestion);
 submit.addEventListener("click", submitQuiz);
 retake.addEventListener("click", () => location.reload());
 correction.addEventListener("click", quizCorrection);
+document.addEventListener("keydown", keyHandler);
